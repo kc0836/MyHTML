@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>MathCode.net</title>  
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    </head>
+    <body>
+        <br/>
+        <div class="container">
+            <h2>Solve Math Problems with JavaScript</h2>
+            | <a href="http://mathcode.net">MathCode</a> | <a href="http://pluralsight.com">Pluralsight</a> | <a href="http://mathcode.net/template.txt">Template</a> | 
+            <hr>
+            <!-- html code here -->
+            <h3>Title</h3>
+            <input type="submit" id="submitButton" value=" Go"/>
+            <br/><br/>
+            <div id="details" ></div>
+        </div>
+
+        <script type=text/javascript>
+           "use strict";
+            $(document).ready(function () {
+                // function code goes here
+                $('#submitButton').click(function() {
+                    // string functions
+
+                    var msg = "Hello World!";
+                    var length = msg.length;
+                    console.log("The string is " + length + " characters long.");
+                    var pos = msg.indexOf("o");
+                    console.log("o is in position " + pos + " in the string.");
+                    var sub = msg.substring(2, 9);
+                    console.log(sub);
+                    var rep = msg.replace('e', 'x');
+                    console.log(rep);
+                    var up = msg.toUpperCase();
+                    console.log(up);
+                });
+            });
+        </script>
+
+    </body>
+</html>
